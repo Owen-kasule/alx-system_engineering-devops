@@ -1,0 +1,18 @@
+#!/bin/bash
+
+water_base="ewatr"
+stir_base="stir."
+result_base="bestchol"
+
+water_dec=$(echo "$WATER" | tr -d '\n' | tr -d '\r' | tr "${water_base}" '0123456789' | bc)
+stir_dec=$(echo "$STIR" | tr -d '\n' | tr -d '\r' | tr "${stir_base}" '0123456789' | bc)
+result_dec=$((water_dec + stir_dec))
+
+result_baseconv=""
+while ((result_dec > 0)); do
+    remainder=$((result_dec % ${#result_base}))
+    result_baseconv="${result_base:${remainder}:1}${result_baseconv}"
+    result_dec=$((result_dec / ${#result_base}))
+done
+
+echo "$result_baseconv"
