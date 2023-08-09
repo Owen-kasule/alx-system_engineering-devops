@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Count the number of directories in the PATH
+path_count=$(echo $PATH | tr -cd ':' | wc -c)
+
+# Add 1 to include the last directory (there is no colon at the end)
+((path_count++))
+
+# Print the directory count
+echo "$path_count"

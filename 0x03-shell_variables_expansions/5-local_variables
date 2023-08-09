@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Print all local variables, environment variables, and functions
+set | less
+declare -F

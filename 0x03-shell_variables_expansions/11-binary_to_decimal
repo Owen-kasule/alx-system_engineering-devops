@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Convert binary to decimal
+decimal=$((2#BINARY))
+
+# Print the decimal number followed by a new line
+echo "$decimal"

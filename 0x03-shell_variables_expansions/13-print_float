@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Print the number with two decimal places
+printf "%.2f\n" $NUM

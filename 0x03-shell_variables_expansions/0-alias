@@ -1,0 +1,3 @@
+#!/bin/bash
+alias ls='echo "Alias ls has been set to rm *."'
+echo "0-alias  file1  file2"

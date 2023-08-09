@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Create a global variable
+export BEST="School"
+
+# Display a message
+echo "Global variable BEST has been set to '$BEST'"

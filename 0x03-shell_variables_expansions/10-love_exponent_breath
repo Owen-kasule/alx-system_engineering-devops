@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Calculate the result
+result=$((BREATH ** LOVE))
+
+# Print the result followed by a new line
+echo "$result"
+
